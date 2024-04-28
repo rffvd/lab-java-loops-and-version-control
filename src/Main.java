@@ -10,15 +10,14 @@ public class Main {
         System.out.println("Difference between the largest and smallest values: " + differenceBetweenMaxAndMin(numbers));
 
 
-
-
     }
+
     public static int differenceBetweenMaxAndMin(int[] arr) {
 
         int min = arr[0];
         int max = arr[0];
 
-        for(int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i];
             } else if (arr[i] > max) {
@@ -28,13 +27,14 @@ public class Main {
 
         return max - min;
     }
+
     public static void findSmallestElements(int[] arr) {
 
         int smallest = Integer.MAX_VALUE;
         int secondSmallest = Integer.MAX_VALUE;
 
-        for(int num : arr) {
-            if(num < smallest) {
+        for (int num : arr) {
+            if (num < smallest) {
                 secondSmallest = smallest;
                 smallest = num;
             }
@@ -43,9 +43,9 @@ public class Main {
         System.out.println("Smallest element: " + smallest);
         System.out.println("Second smallest element: " + secondSmallest);
     }
+
     public static double calculateExpression(int x, double y) {
-        return (Math.pow(x, 2)+Math.pow((((4 * y )/ 5)-x),2));
-        //return (3 * x) + (4 * y);
+        return (Math.pow(x, 2) + Math.pow((((4 * y) / 5) - x), 2));
     }
 
 }
